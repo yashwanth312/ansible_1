@@ -22,10 +22,7 @@
     copy:
       src: /docker/code.html
       dest: /code
-  - name: Installing python3 package
-    package: 
-      name: "python3"
-      state: present
+
   - name: Installing docker via pip
     command: pip3 install docker
     ignore_errors: true 
